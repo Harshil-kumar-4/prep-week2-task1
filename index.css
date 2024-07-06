@@ -1,0 +1,180 @@
+body {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    z-index: 999;
+    position: fixed;
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+
+nav ul li a {
+    color: black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.nt{
+    color: rgb(0, 0, 0);
+}
+
+#image {
+    z-index: 1000;
+    position: fixed;
+    top: 4px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+}
+/* Header Section */
+header {
+    background-image: url('https://afar.brightspotcdn.com/dims4/default/9c32821/2147483647/strip/true/crop/3000x1592+0+354/resize/1440x764!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2F6f%2F05%2F575035894e2f8f1330735abf9cd3%2Ftravelguides-hawaii-norbertturi-shutterstock.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.header-content {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+    animation: slide-in 3s ease-in-out;
+}
+
+@keyframes slide-in {
+    0% {
+        color: #000000;
+        transform: translate(-100%, 0);
+        width: 60%;
+    }
+    50% {
+        color: #000000;
+        transform: translate(0, 0);
+        width: 60%;
+    }
+    100%{
+        width: 100%;
+        color: #ffffff;
+    }
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+/* Features Section */
+#features {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.feature-box {
+    color: #333;
+    background-color: #bebdbd;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 30%;
+    border-radius: 100%;
+    border: 1px #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-box:hover{
+    color: white;
+    transform: translate(0px,-10px);
+    box-shadow: 0 40px 30px rgba(0, 0, 0, 0.4);
+    background-image: url('https://img.veenaworld.com/wp-content/uploads/2018/06/joanna-kosinska-290213-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(80%);
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+    background-image: url('https://media.istockphoto.com/id/610041376/photo/beautiful-sunrise-over-the-sea.jpg?s=612x612&w=0&k=20&c=R3Tcc6HKc1ixPrBc7qXvXFCicm8jLMMlT99MfmchLNA=');
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.testimonial-box {
+    background-color: #444;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    width: 40%;
+    border: 0.5px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.testimonial-box:hover{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: black;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
